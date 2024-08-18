@@ -1,0 +1,84 @@
+.dashboard-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
+  .filter-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .filter-buttons button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .filter-buttons button:hover {
+    background-color: #0056b3;
+  }
+  
+  .create-project-button {
+    display: block;
+    width: 200px;
+    margin: 0 auto 20px;
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .create-project-button:hover {
+    background-color: #218838;
+  }
+  
+  .projects-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .projects-list li {
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .projects-list li h3 {
+    margin: 0;
+  }
+  
+  .projects-list li p {
+    margin: 5px 0;
+  }
+  
+  .projects-list li a {
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  .projects-list li a:hover {
+    text-decoration: underline;
+  }
+  
