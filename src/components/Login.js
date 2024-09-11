@@ -1,17 +1,26 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../styles/Login.css';
+import { loginUser } from '../api';
 
 const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const navigate = useNavigate();
 
-  const handleLogin = (e) => {
+  const handleLogin = async (e) => {
     e.preventDefault();
     // Implement your login API call here
     // On successful login, redirect to dashboard
-    navigate('/dashboard');
+    try {
+        await loginUser({ email, password });
+        alert('Login successful!');
+        navigate('/dashboard');
+      } catch (error) {
+        console.error(error);
+        alert('Signup failed!');
+      }
+    
   };
 
   return (

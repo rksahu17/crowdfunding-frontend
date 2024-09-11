@@ -8,6 +8,7 @@ const api = axios.create({
 });
 
 export const registerUser = (user) => api.post('/users/register', user);
+export const loginUser = (user) => api.post('/users/login', user);
 export const fetchProjects = () => api.get('/projects');
 export const createDonation = (donation) => api.post('/donations', donation);
 export const fetchProjectDetails = (projectId) => api.get(`/projects/${projectId}`);
